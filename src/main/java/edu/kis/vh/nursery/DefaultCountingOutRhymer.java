@@ -2,11 +2,12 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-	private static final int MAX_NUMBER_OF_TOTAL_COUNTS = 11;
+	private static final int MAX_ARRAY_SIZE = 12;
+	private static final int MAX_NUMBER_OF_TOTAL_COUNTS = MAX_ARRAY_SIZE - 1;
 	private static final int STARTING_NUMBER_OF_TOTAL_COUNTS = -1;
-	private static final int NUMBER_OF_NUMBERS = 12;
+	private static final int PEEKABOO_ERROR_RETURN = -1;
 
-	private int[] numbers = new int[NUMBER_OF_NUMBERS];
+	private int[] numbers = new int[MAX_ARRAY_SIZE];
 
 	public int total = STARTING_NUMBER_OF_TOTAL_COUNTS;
 
@@ -25,7 +26,7 @@ public class DefaultCountingOutRhymer {
 
 	protected int peekaboo() {
 		if (callCheck())
-			return STARTING_NUMBER_OF_TOTAL_COUNTS;
+			return PEEKABOO_ERROR_RETURN;
 		return numbers[total];
 	}
 
