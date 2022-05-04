@@ -12,10 +12,6 @@ public class DefaultCountingOutRhymer {
 	private int total = STARTING_NUMBER_OF_TOTAL_COUNTS;
 
 
-	public int getTotal() {
-		return total;
-	}
-
 
 	public void countIn(int in) {
 		if (!isFull())
@@ -42,9 +38,5 @@ public class DefaultCountingOutRhymer {
 		return numbers[total--];
 	}
 //	Ostatnio edytowany plik wedlug alt + →
-
-	public void setTotal(int total) {
-		this.total = total;
-	}
 
 }
