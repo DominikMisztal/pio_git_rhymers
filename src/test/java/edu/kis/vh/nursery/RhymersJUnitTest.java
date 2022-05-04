@@ -3,6 +3,8 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+import edu.kis.vh.nursery.list.IntLinkedList;
+
 public class RhymersJUnitTest {
 
 	@Test
@@ -73,6 +75,17 @@ public class RhymersJUnitTest {
 		Assert.assertEquals(testValue, result);
 		result = rhymer.countOut();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
+	}
+	
+	@Test
+	public void testLinkedList() {
+		IntLinkedList linkedList = new IntLinkedList();
+		boolean test = linkedList.isEmpty();
+		Assert.assertEquals(test, false);
+		linkedList.push(1);
+		Assert.assertEquals(1, linkedList.pop());
+		boolean test = linkedList.isEmpty();
+		Assert.assertEquals(test, false);
 	}
 
 }
