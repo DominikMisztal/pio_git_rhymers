@@ -13,7 +13,8 @@ class RhymersDemo {
 		testRhymers(factory);
 		
 	}
-
+	
+	//TODO: split the method into separate sub-methods
 	private static void testRhymers(RhymersFactory factory) {
 		DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
 				factory.getFIFORhymer(), factory.getHanoiRhymer()};

@@ -81,11 +81,11 @@ public class RhymersJUnitTest {
 	public void testLinkedList() {
 		IntLinkedList linkedList = new IntLinkedList();
 		boolean test = linkedList.isEmpty();
-		Assert.assertEquals(test, false);
+		Assert.assertEquals(test, true);
 		linkedList.push(1);
 		Assert.assertEquals(1, linkedList.pop());
 		test = linkedList.isEmpty();
-		Assert.assertEquals(test, false);
+		Assert.assertEquals(test, true);
 	}
 
 }
