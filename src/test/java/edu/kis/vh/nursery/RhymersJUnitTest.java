@@ -84,7 +84,7 @@ public class RhymersJUnitTest {
 		Assert.assertEquals(test, false);
 		linkedList.push(1);
 		Assert.assertEquals(1, linkedList.pop());
-		boolean test = linkedList.isEmpty();
+		test = linkedList.isEmpty();
 		Assert.assertEquals(test, false);
 	}
 
